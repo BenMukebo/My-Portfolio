@@ -1,0 +1,41 @@
+.contact{
+    // width: 100%;
+    height: 100%;
+    padding-top: 35vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: 
+    linear-gradient(to right, rgba($primary-color, 0.9), rgba($primary-color, 0.3)), center top /contain no-repeat
+    url('../img/img1.jpg'); 
+    // background-size: contain;
+    
+
+    h2 {
+        font-size: 3rem;
+        margin-bottom: 4rem;
+    }
+    #{&}-list{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2.5rem;
+        font-size: 1.5rem;
+        padding-left: 3rem;
+
+        span{
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .social-icons{
+        position: initial;
+        margin-top: 4rem;
+
+    }
+    
+
+
+}

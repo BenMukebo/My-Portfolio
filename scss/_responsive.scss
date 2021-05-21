@@ -1,0 +1,87 @@
+@include media-md {
+    .menu-btn {
+      visibility: hidden;
+    }
+  
+    .nav {
+      visibility: visible;
+  
+      .nav-menu {
+        display: block;
+        transform: translateY(0);
+        height: 100%;
+        background: transparent;
+        text-align: right;
+  
+        &-item {
+          display: inline;
+          padding-right: 1.5rem;
+        }
+  
+        .nav-menu-item{
+            .nav-menu-link{
+                font-size: 1.5rem;
+              }
+        }
+      }
+    }
+  
+    .about-bio {
+      font-size: 1.5rem;
+    }
+  
+    .projects {
+        #{&}-bio-image{
+            height: 40vh;
+      }
+      #{&}-items{
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .text-secondary {
+        font-size: 3rem;
+      }
+    }
+
+    .contact {
+        #{&}-list{
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 6rem;
+            // grid-row-gap: 4rem;
+            
+            padding-left: 9rem;
+            
+        }
+    }
+}
+
+  @include media-lg {
+
+    .projects {
+
+      #{&}-items{
+        grid-template-columns: repeat(3, 1fr);
+        
+      }
+    }
+  
+    .contact {
+        #{&}-list{
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 6rem;
+        // grid-row-gap: 4rem;
+        padding-left: 1rem;
+
+        .contact-phone{
+            margin-left: 2rem;
+          }
+        }
+    }
+  }
+
+  @include media-xl {
+    .projects{
+        #{&}-bio-image {
+            height: 50vh;
+        }
+    }
+  }
